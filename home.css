@@ -10,7 +10,7 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
-/* Dark Mode */
+/* Dark Mode Adjustments */
 body.dark-mode {
     background: #121212;
     color: #fff;
@@ -20,6 +20,21 @@ body.dark-mode {
 }
 .dark-mode nav {
     background: rgba(0, 0, 0, 0.8);
+}
+
+/* Change nav links color in dark mode */
+body.dark-mode nav ul li a {
+    color: white; /* White text for nav links in dark mode */
+}
+
+body.dark-mode nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Text Color in Dark Mode */
+body.dark-mode nav ul li:hover .dropdown a {
+    color: black; /* Black text for dropdown items in dark mode */
 }
 
 /* Top Bar */
@@ -52,7 +67,7 @@ body.dark-mode {
 
 /* Navigation */
 nav {
-    background: rgba(0, 43, 102, 0.8);
+    background: white;
     padding: 10px 0;
     position: sticky;
     top: 0;

@@ -1,0 +1,149 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-bar {
+    background-color: #004a99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+button.toggle-theme {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #002b66;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Complaint Category Section */
+.complaint-category {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.buttons a {
+    padding: 10px 15px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.report-anonymous {
+    background-color: #00aaff;
+    color: white;
+}
+
+.register-track {
+    background-color: #0088cc;
+    color: white;
+}
+
+.register-complaint {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+body.dark-mode .top-bar {
+    background-color: #333;
+}
+
+body.dark-mode nav {
+    background: #222;
+}
+
+body.dark-mode nav ul li a {
+    color: white; /* White text for nav links in dark mode */
+}
+
+body.dark-mode .complaint-category {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .card h3 {
+    color: white;
+}
+
+body.dark-mode .buttons a {
+    background-color: #005bb5;
+    color: white;
+}
