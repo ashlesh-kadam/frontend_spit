@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Crime Complaint Portal</title>
+    <link rel="stylesheet" href="./complain.css">
+
+</head>
+<body>
+
+
+    <div class="header">
+        National Cyber Crime Reporting Portal
+    </div>
+
+    <div class="container">
+        <h2>Register a Complaint</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Mobile Number</label>
+            <div class="phone-container">
+                <select>
+                    <option>+91</option>
+                    <option>+1</option>
+                    <option>+44</option>
+                </select>
+                <input type="tel" id="phone" placeholder="Enter mobile number" required>
+            </div>
+            
+            <button type="button" onclick="sendOTP()">Get OTP</button>
+            
+            <label for="otp">Enter OTP</label>
+            <input type="text" id="otp" placeholder="Enter OTP received" required>
+
+            
+            <label for="type">Type of Cyber Crime</label>
+            <select id="type" required>
+                <option value="">Select Crime Type</option>
+                <option value="identity">Identity Theft</option>
+                <option value="hacking">Hacking</option>
+                <option value="fraud">Online Fraud</option>
+                <option value="bullying">Cyber Bullying</option>
+                <option value="dos">Denial-of-service(DoS)</option>
+                
+            </select>
+
+            <label for="details">Complaint Details</label>
+            <textarea id="details" rows="5" placeholder="Describe the incident in detail" required></textarea>
+
+            <div class="button-container">
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+            
+            <div class="button-container">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
+
