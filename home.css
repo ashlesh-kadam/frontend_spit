@@ -95,6 +95,17 @@ nav ul li:hover .dropdown {
     margin-top: 10px;
 }
 
+/* Complaint Box */
+.complaint-box {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #007BFF;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 /* Buttons */
 .buttons {
     display: flex;
@@ -127,4 +138,25 @@ nav ul li:hover .dropdown {
 }
 .register-track, .register-complaint {
     background: #0088cc;
+}
+
+/* Learn & File Buttons */
+.learn-btn, .file-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.learn-btn {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.file-btn {
+    background: #003366;
+    color: white;
 }

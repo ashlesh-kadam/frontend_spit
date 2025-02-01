@@ -3,8 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     buttons.forEach(button => {
         button.addEventListener("click", function(event) {
-            event.preventDefault();
-            alert("This functionality is not yet implemented.");
+            if (button.classList.contains("register-track")) {
+                window.location.href = "register_track.html";
+            } else {
+                event.preventDefault();
+                alert("This functionality is not yet implemented.");
+            }
         });
     });
 });
