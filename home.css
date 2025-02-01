@@ -166,6 +166,68 @@ nav ul li a:hover {
     background: #002b66;
 }
 
+/* Register Complaint Page Styles */
+
+/* Complaint Category Section */
+.complaint-category {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.buttons a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.red {
+    background: #ff6b6b;
+}
+.blue {
+    background: #4a90e2;
+}
+.purple {
+    background: #8e44ad;
+}
+
 /* Mobile Nav */
 .menu-toggle {
     display: none;
@@ -182,5 +244,10 @@ nav ul li a:hover {
         border: none;
         color: white;
         font-size: 24px;
+    }
+
+    .complaint-category {
+        flex-direction: column;
+        align-items: center;
     }
 }
