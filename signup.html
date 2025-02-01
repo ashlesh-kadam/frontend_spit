@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<link rel="stylesheet" href="signup.css">
+<nav>
+<div class="heading">
+    <img class="img" src="https://cybercrime.gov.in/assets/images/emblem-dark.png" alt="">
+    <p>
+        भारत सरकार
+Government of india|
+गृह मंत्रालय
+Ministry of Home Affairs
+
+    </p>
+</div>
+</nav>
+<body>
+<div class="container">
+    <div class="form-box" id="signup-box">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <a href="http://127.0.0.1:5500/login.html"
+            <button type="submit" class="btn">Sign Up</button>
+            </a>
+            <p>Already have an account? <a href="http://127.0.0.1:5500/login.html" onclick="toggleForm()">Login</a></p>
+        </form>
+    </div>
+</div>
+    <script>
+        function toggleForm() {
+            document.getElementById("login-box").classList.toggle("hidden");
+            document.getElementById("signup-box").classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>
