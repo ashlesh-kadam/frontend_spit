@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".buttons a");
+    document.querySelector('.language-btn').addEventListener('click', function() {
+        alert("Language selection feature coming soon!");
+    });
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function(event) {
-            if (button.classList.contains("register-track")) {
-                window.location.href = "register_track.html";
-            } else {
-                event.preventDefault();
-                alert("This functionality is not yet implemented.");
-            }
+    // Mobile dropdown handling
+    document.querySelectorAll('.dropdown-container').forEach(item => {
+        item.addEventListener('click', function() {
+            let dropdown = this.querySelector('.dropdown');
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
         });
     });
 });
 
+document.querySelector('.toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});

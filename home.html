@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Cyber Crime Reporting Portal</title>
+    <title>Cyber Crime Reporting</title>
     <link rel="stylesheet" href="./home.css">
+    <script defer src="./home.js"></script>
 </head>
 <body>
     <header>
         <div class="top-bar">
-            <img src="logo.png" alt="Government Logo">
-            <h1>National Cyber Crime Reporting Portal</h1>
-            <div class="language-selector">
-                <button>Language</button>
-            </div>
+            <img src="logo.png" alt="Logo">
+            <h1>Cyber Crime Reporting</h1>
+            <button class="toggle-theme">🌙 Dark Mode</button>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="./women/children_crime.html">Register a Complaint</a>
-                    <div class="dropdown">
-                        <a href="./women/children_crime.html">Women/Children Related Crime</a>
-                        <a href="./women/children_crime.html">Financial Fraud</a>
-                        <a href="./women/children_crime.html">Other Cyber Crime</a>
-                    </div>
+            <ul class="nav-links">
+                <li class="dropdown-container">
+                    <a href="#">📜 Report Crime</a>
+                    <ul class="dropdown">
+                        <li><a href="./women/children_crime.html">Women/Children Safety</a></li>
+                        <li><a href="./women/children_crime.html">Financial Fraud</a></li>
+                        <li><a href="./women/children_crime.html">Online Harassment</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">Track Complaint</a></li>
-                <li><a href="#">Report & Check Suspect</a></li>
-                <li><a href="#">Cyber Volunteers</a></li>
-                <li><a href="#">Learning Corner</a></li>
-                <li><a href="#">Citizen Survey</a></li>
+                <li><a href="#">📌 Track Complaint</a></li>
+                <li><a href="#">🔍 Check Suspect</a></li>
+                <li><a href="#">👥 Volunteers</a></li>
+                <li><a href="#">📚 Learning Hub</a></li>
+                <li><a href="#">📊 Citizen Survey</a></li>
             </ul>
+            <button class="menu-toggle">☰</button>
         </nav>
     </header>
+
     <main>
-        <section class="banner">
-            <p>Online Financial Fraud Reporting</p>
-            <p>Call <strong>1930</strong> or visit <a href="https://cybercrime.gov.in" style="color: yellow;">cybercrime.gov.in</a> to file your complaint</p>
+        <section class="hero">
+            <h2>🔐 Stay Safe, Report Cyber Crimes</h2>
+            <p>Call <strong>1930</strong> or visit <a href="https://cybercrime.gov.in">cybercrime.gov.in</a></p>
+            <button class="cta-btn">🚀 Report Now</button>
         </section>
-        <section class="info">
-            <p>Cybersecurity is an essential part of modern life. Follow best practices and stay safe from cyber crimes.</p>
+
+        <section class="cards">
+            <div class="card">
+                <h3>🛡️ Women/Children Safety</h3>
+                <p>Protect against online abuse and harassment.</p>
+                <button class="card-btn">Report</button>
+            </div>
+            <div class="card">
+                <h3>💰 Financial Fraud</h3>
+                <p>Secure yourself from online frauds and scams.</p>
+                <button class="card-btn">Report</button>
+            </div>
+            <div class="card">
+                <h3>🎭 Online Harassment</h3>
+                <p>Report cyberbullying, threats, and hate speech.</p>
+                <button class="card-btn">Report</button>
+            </div>
         </section>
     </main>
 </body>
